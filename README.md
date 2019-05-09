@@ -5,6 +5,8 @@
 1. 使用cmd，运行make.bat编译
 2. 使用TeX软件
 
+推荐下载[texlive离线安装包](https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/)
+
 ## MacOS用户:
 
 1. 使用Terminal，运行make编译

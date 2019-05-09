@@ -6,17 +6,17 @@
 @rem Copyright (c) 2010-2012 Casper Ti. Vector
 @rem Public domain.
 
-set JOBNAME=pkuthss
-@rem Õâ¸ö±äÁ¿µÄÖµ¿ÉÒÔÎª latex »ò pdflatex¡£
-set LATEX=latex
-@rem Èç¹ûÎÞ·¨Ê¹ÓÃ biber£¬¿ÉÒÔ¸ÄÎª¡°bibtex¡±¡£
+set JOBNAME=fduthss
+@rem ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Îª latex ï¿½ï¿½ pdflatexï¿½ï¿½
+set LATEX=pdflatex
+@rem ï¿½ï¿½ï¿½ï¿½Þ·ï¿½Ê¹ï¿½ï¿½ biberï¿½ï¿½ï¿½ï¿½ï¿½Ô¸ï¿½Îªï¿½ï¿½bibtexï¿½ï¿½ï¿½ï¿½
 set BIBTEX=biber -l zh__pinyin
 set GBK2UNI=gbk2uni
 set DVIPDF=dvipdfmx
 
 if "%LATEX%"=="latex" (set DODVIPDF=%DVIPDF% %JOBNAME%
 ) else (set DODVIPDF=echo No need to run %DVIPDF%.)
-@rem ÓÃ pdflatex Ê±¿ÉÄÜÐèÒªÊ¹ÓÃ gbk2uni ×ª»» .out ÎÄ¼þ±àÂëÒÔ·ÀÊéÇ©ÂÒÂë¡£
+@rem ï¿½ï¿½ pdflatex Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÊ¹ï¿½ï¿½ gbk2uni ×ªï¿½ï¿½ .out ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½Ç©ï¿½ï¿½ï¿½ë¡£
 if "%LATEX%"=="pdflatex" (@rem set DOGBK2UNI=%GBK2UNI% %JOBNAME%
 ) else (set DOGBK2UNI=echo No need to run %GBK2UNI%.)
 if "%1"=="" goto doc
